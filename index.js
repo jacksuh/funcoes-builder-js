@@ -38,6 +38,8 @@ Athlete.prototype.constructor = Athlete;
 function calculateImc() {
     var alturaEl = document.querySelector('#altura');
     var pesoEl = document.querySelector('#peso');
+    var imcEl = document.querySelector('#imc');
+    var dietEl = document.querySelector('#diet');
 
     return function (){
     var height = parseFloat(alturaEl.value);
