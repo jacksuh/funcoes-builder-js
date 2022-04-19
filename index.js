@@ -44,8 +44,8 @@ function calculateImc() {
     return function (){
     var height = parseFloat(alturaEl.value);
     var weight = parseFloat(pesoEl.value);
-    document.querySelector('#imc').innerHTML = new Dietician(height, weight, 1234).calculateImc();
-    document.querySelector('#diet').innerHTML = new Athlete(height, weight, 1234).calculateDiet();
+    imcEl.innerHTML = new Dietician(height, weight, 1234).calculateImc();
+    dietEl.innerHTML = new Athlete(height, weight, 1234).calculateDiet();
     }
 }
 
